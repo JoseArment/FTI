@@ -87,13 +87,18 @@ def UAB_gcd_with_euclides(m, n):
     
     result = None
     
+    while True:
+        result = m % n
+        if result == 0:
+            return n
+        else:
+            m = n
+            n = result
     #### IMPLEMENTATION GOES HERE ####
     
 
 
     ##################################
-    
-    return result
 
 
 # In[ ]:
