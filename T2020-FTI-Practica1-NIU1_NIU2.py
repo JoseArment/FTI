@@ -150,8 +150,16 @@ def UAB_exp_coprime_prob(N, M):
 
 def UAB_euler_phi(n):
     
-    result = None
+    e = 0
+    i = 2
+    suma_1 = 2
+    result = suma_1 + float(1/factorial(2))
     
+    while fabs(suma_1 - result) >= n:
+        suma_1 = reuslt
+        result += float(1/factorial(i))
+        i += 1
+        
     #### IMPLEMENTATION GOES HERE ####
     
 
