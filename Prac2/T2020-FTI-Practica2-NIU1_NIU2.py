@@ -127,14 +127,23 @@ def UAB_right_shift(n, L):
     return result
 
 
-# In[3]:
+# In[5]:
 
 
 # EXERCISE 2b: Generate the two codes and check they are equivalent. Show length, dimension and minimum distance of the generated code
 
 #### IMPLEMENTATION GOES HERE ####
+#v = [0,0,1,1,0,1,0]
 
+F2 = GF(2)
 
+v = vector(GF(2), [1,0,1,1])
+
+v = matrix(F2, [(0,1,0,1,0), (0,1,1,1,0), (0,0,1,0,1), (0,1,0,0,1)])
+
+C = LinearCode(v)
+
+print C
 
 ##################################
 
